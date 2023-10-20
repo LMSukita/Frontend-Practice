@@ -21,6 +21,41 @@
   height: 88px;
 }
 
+.topbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 1900px;
+  margin: auto;
+  width: 90%;
+}
+
+.topbar__helpcenter {
+  display: inline-block;
+  margin: 4px 0 0 0.8rem;
+  vertical-align: middle;
+  color: white;
+  font-family: "GT America Standard";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  padding: 2px 0 4px 0.8rem;
+  border-left: 2px solid white;
+  transition: all 0.3s;
+  text-decoration: none;
+  background: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 @media (min-width: 768px) {
   .container {
     padding-right: 30px;
