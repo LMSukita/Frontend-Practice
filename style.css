@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* topbar */
+.topbar {
+  position: relative;
+  top: 0;
+  background: black;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  -webkit-transition: margin-top 0.7s ease;
+  transition: margin-top 0.7s ease;
+  height: 88px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
