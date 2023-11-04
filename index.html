@@ -79,19 +79,24 @@ ga('send', 'pageview');
             >
           </div>
           <div class="topbar__buttons">
-            <button class="btn btn--topbar btn--toggle-search" data-toggle-search>
+            <button type="button" class="btn btn--topbar btn--toggle-search" data-toggle-search>
               <span class="fa fa-search">
-                ::before
               </span>
             </button>
-            <button type="tcon-menu__lines" aria-label="toggle menu"
+            <button type="button" class="tcon tcon-menu--xcross" aria-label="toggle menu"
             data-toggle-menu>
               <span class="tcon-menu__lines" aria-hidden="true">
-                ::before
-                ::after
               </span>
               <span class="tcon-visuallyhidden">toggle menu</span>
             </button>
+          </div>
+          <div class="search-box search-box--topbar" data-search-topbar>
+            <form role="search" class="search" data-search data-instant="true" autocomplete="off" action="/hc/en-us/search" accept-charset="UTF-8" method="get">
+              <input type="hidden" name="utf8" value="✓" autocomplete="off">
+              <zd-autocomplete-announcement id="314776ad-9fd5-493f-8972-d91828964575" aria-live="polite" role="listbox"></zd-autocomplete-announcement>
+              <input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search" aria-autocomplete="both" aria-expanded="false" role="combobox" aria-owns="314776ad-9fd5-493f-8972-d91828964575">
+              <input type="submit" name="commit" value="Search">
+            </form>
           </div>
         </div>
       </header>

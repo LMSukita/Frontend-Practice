@@ -113,8 +113,19 @@
   border-radius: 8px;
 }
 
-.btn--topbar {
+.btn--topbar,
+.login,
+input[type="submit"],
+.btn--primary,
+.new-request-page footer,
+.profile-header__options a,
+.section-subscribe .dropdown-toggle,
+.article-unsubscribe,
+.article-subscribe {
   position: relative;
+  color: black;
+  background-color: transparent;
+  border-color: black;
 }
 
 .btn--toggle-search {
@@ -132,7 +143,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.fa-search:before {
+span.fa.fa-search::before {
   content: "\f002";
 }
 
@@ -141,4 +152,69 @@
     padding-right: 30px;
     padding-left: 30px;
   }
+}
+
+/* tcon menu */
+
+.tcon.tcon-menu--xcross {
+  width: auto;
+}
+
+.tcon {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-left: 15px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.search-box--topbar #query {
+  font-weight: 400;
+}
+
+.searb-box #query {
+  padding-left: 1rem;
+}
+
+input {
+  line-height: 32px !important;
+  color: #000 !important;
+  border-color: #000 !important;
+  border-radius: 4px !important;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.5em 1em;
+    font-size: 20px;
+    font-family: "GT America Standard", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    background-clip: padding-box;
+    box-sizing: border-box;
 }
